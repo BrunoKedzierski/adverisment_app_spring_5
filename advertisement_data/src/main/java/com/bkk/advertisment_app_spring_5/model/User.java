@@ -1,4 +1,4 @@
-package com.bkk.adverisment_app_spring_5.model;
+package com.bkk.advertisment_app_spring_5.model;
 
 import java.util.HashSet;
 import java.util.Set;

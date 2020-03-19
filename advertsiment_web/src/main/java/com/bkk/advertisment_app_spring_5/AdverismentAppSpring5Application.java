@@ -1,4 +1,4 @@
-package com.bkk.adverisment_app_spring_5;
+package com.bkk.advertisment_app_spring_5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

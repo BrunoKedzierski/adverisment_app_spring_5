@@ -1,4 +1,4 @@
-package com.bkk.adverisment_app_spring_5.model;
+package com.bkk.advertisment_app_spring_5.model;
 
 public class Category {
     private String title;
