@@ -46,7 +46,7 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>scm:git:https://github.com/BrunoKedzierski/adverisment_app_spring_5.git</developerConnection>
+        <developerConnection>scm:git:github.com/BrunoKedzierski/adverisment_app_spring_5.git</developerConnection>
       <tag>adverisment_app_spring_5-0.0.1</tag>
   </scm>
 
