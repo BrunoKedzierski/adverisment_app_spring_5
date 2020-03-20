@@ -3,7 +3,7 @@ package com.bkk.advertisment_app_spring_5.model;
 import java.util.HashSet;
 import java.util.Set;
 
-public class User {
+public class User extends BaseEntity{
     private String username;
     private String firstName;
     private String lastName;

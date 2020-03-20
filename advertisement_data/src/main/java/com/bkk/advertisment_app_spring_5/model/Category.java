@@ -1,6 +1,6 @@
 package com.bkk.advertisment_app_spring_5.model;
 
-public class Category {
+public class Category  extends BaseEntity{
     private String title;
     private String description;
 

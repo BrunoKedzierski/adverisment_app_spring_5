@@ -2,7 +2,7 @@ package com.bkk.advertisment_app_spring_5.model;
 
 import java.time.LocalDate;
 
-public class Comment {
+public class Comment extends BaseEntity {
 
     private User user;
     private String content;
