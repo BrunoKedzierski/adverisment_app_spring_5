@@ -6,8 +6,9 @@ public class PostsController {
 
 
 
-        @RequestMapping("/postss")
+        @RequestMapping("/posts")
         public String index() {
+
 
             return "posts/index";
         }
