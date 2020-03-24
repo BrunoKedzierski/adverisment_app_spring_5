@@ -1,11 +1,13 @@
 package com.bkk.advertisment_app_spring_5.services.map;
 
 import com.bkk.advertisment_app_spring_5.model.Comment;
-import com.bkk.advertisment_app_spring_5.services.CrudService;
+import com.bkk.advertisment_app_spring_5.services.CommentService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class CommentMapService extends MapService<Comment,Long> implements CrudService<Comment,Long> {
+@Service
+public class CommentMapService extends MapService<Comment,Long> implements CommentService {
     @Override
     public Set<Comment> findAll() {
         return super.findAll();

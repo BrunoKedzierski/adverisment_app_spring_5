@@ -1,11 +1,13 @@
 package com.bkk.advertisment_app_spring_5.services.map;
 
 import com.bkk.advertisment_app_spring_5.model.User;
-import com.bkk.advertisment_app_spring_5.services.CrudService;
+import com.bkk.advertisment_app_spring_5.services.UserService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class UserMapService extends MapService<User,Long> implements CrudService<User,Long> {
+@Service
+public class UserMapService extends MapService<User,Long> implements UserService {
 
     @Override
     public Set<User> findAll() {

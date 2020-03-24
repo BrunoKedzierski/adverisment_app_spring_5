@@ -1,11 +1,12 @@
 package com.bkk.advertisment_app_spring_5.services.map;
 
 import com.bkk.advertisment_app_spring_5.model.Post;
-import com.bkk.advertisment_app_spring_5.services.CrudService;
+import com.bkk.advertisment_app_spring_5.services.PostService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
-public class PostMapService extends MapService<Post,Long> implements CrudService<Post,Long> {
+@Service
+public class PostMapService extends MapService<Post,Long> implements PostService {
     @Override
     public Set<Post> findAll() {
         return super.findAll();

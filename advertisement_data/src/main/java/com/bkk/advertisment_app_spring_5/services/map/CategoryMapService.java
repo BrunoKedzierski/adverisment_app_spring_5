@@ -1,11 +1,11 @@
 package com.bkk.advertisment_app_spring_5.services.map;
 
 import com.bkk.advertisment_app_spring_5.model.Category;
-import com.bkk.advertisment_app_spring_5.services.CrudService;
+import com.bkk.advertisment_app_spring_5.services.CategoryService;
 
 import java.util.Set;
 
-public class CategoryMapService extends MapService<Category,Long> implements CrudService<Category,Long> {
+public class CategoryMapService extends MapService<Category,Long> implements CategoryService {
 
     @Override
     public Set<Category> findAll() {
