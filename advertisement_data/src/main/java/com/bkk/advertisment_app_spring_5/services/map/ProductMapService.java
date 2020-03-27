@@ -1,29 +1,30 @@
 package com.bkk.advertisment_app_spring_5.services.map;
 
-import com.bkk.advertisment_app_spring_5.model.Post;
-import com.bkk.advertisment_app_spring_5.services.PostService;
+
+import com.bkk.advertisment_app_spring_5.model.Product;
+import com.bkk.advertisment_app_spring_5.services.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
-public class PostMapService extends MapService<Post,Long> implements PostService {
+public class ProductMapService extends MapService<Product,Long> implements ProductService {
     @Override
-    public Set<Post> findAll() {
+    public Set<Product> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Post findById(Long id) {
+    public Product findById(Long id) {
         return null;
     }
 
     @Override
-    public Post save(Post object) {
+    public Product save(Product object) {
         return super.save(object.getId(),object);
     }
 
     @Override
-    public void delete(Post object) {
+    public void delete(Product object) {
         super.delete(object);
     }
 

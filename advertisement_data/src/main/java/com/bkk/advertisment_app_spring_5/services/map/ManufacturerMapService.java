@@ -1,31 +1,31 @@
 package com.bkk.advertisment_app_spring_5.services.map;
 
-import com.bkk.advertisment_app_spring_5.model.User;
-import com.bkk.advertisment_app_spring_5.services.UserService;
+import com.bkk.advertisment_app_spring_5.model.Manufacturer;
+import com.bkk.advertisment_app_spring_5.services.ManufacturerService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class UserMapService extends MapService<User,Long> implements UserService {
+public class ManufacturerMapService extends MapService<Manufacturer,Long> implements ManufacturerService {
 
     @Override
-    public Set<User> findAll() {
+    public Set<Manufacturer> findAll() {
         return super.findAll();
     }
 
     @Override
-    public User findById(Long id) {
+    public Manufacturer findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public User save(User object) {
+    public Manufacturer save(Manufacturer object) {
       return   super.save(object.getId(),object);
     }
 
     @Override
-    public void delete(User object) {
+    public void delete(Manufacturer object) {
         super.delete(object);
 
     }
