@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 <head>
     <meta charset="UTF-8">
     <title>Posts</title>
 </head>
 <body>
+<!--/*@thymesVar id="product" type="com.bkk.advertisment_app_spring_5.model.Product"*/-->
 <h1 th:text="'List of products'"> posts </h1>
+<table id="vets" class="table table-striped">
+    <thead>
+    <tr>
+        <th >Name</th>
+        <th >Price</th>
+        <th >Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.name}"/>
+        <td th:text="${product.price}"/>
+        <td th:text="${product.quantity}"/>
+        <td class="td-actions text-right">
+            <button type="button" rel="tooltip" class="btn btn-light btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                <span class="glyphicon glyphicon-pencil" style="font-size: 18px; color: #6d98ab"></span>
+            </button>
+            <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-just-icon btn-sm" data-original-title="" title="">
+                <span class=" glyphicon glyphicon-remove-circle" style="font-size: 18px; color: #6d98ab"></span>
+            </button>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>

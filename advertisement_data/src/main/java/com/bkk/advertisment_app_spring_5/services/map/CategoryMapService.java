@@ -2,9 +2,11 @@ package com.bkk.advertisment_app_spring_5.services.map;
 
 import com.bkk.advertisment_app_spring_5.model.Category;
 import com.bkk.advertisment_app_spring_5.services.CategoryService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class CategoryMapService extends MapService<Category,Long> implements CategoryService {
 
     @Override

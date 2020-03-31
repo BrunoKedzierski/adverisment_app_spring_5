@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <h1 th:text="'Index Page'"> Index Page </h1>
+
+
+
+<div class="container-fluid intro" style="height: 90vh;padding: 0; display: flex; flex-direction: column; justify-content: space-evenly;align-content: flex-start; ">
+
+       <div>
+            <h1 style="text-align: center"> Welcome to the Stock Manager !</h1>
+            <hr style="width: 200px; border: 2px solid black">
+       </div>
+
+
+    <div class="row" style="margin-top: 20px;font-size: 25px">
+     <p>This is a simple Spring Boot 5 app. It is connected to a databes containing information about products, manufacturers and shops.
+     The application provides basic CRUD operations, validation, image uploading and more! Techonologies used are:
+     </p>
+        <ul>
+            <li>Java 11</li>
+            <li>Spring 5 and Spring Boot</li>
+            <li>Hibernate</li>
+            <li>Lombok</li>
+            <li>Thymeleaf</li>
+            <li>Spring Security</li>
+            <li>Docker</li>
+            <li>Bootstrap</li>
+        </ul>
+
+    </div>
+<div class="row" style="display: flex; flex-direction: column; justify-content: flex-end;align-content: center">
+    <div style="display: flex; justify-content: space-evenly">
+        <div class="logo"><img src="resources/images/java-1.png" style="width: 70px;height: 110px; margin-top: 5px"></div>
+        <div class="logo"> <img src="resources/images/spring-logo.png" style="width: 100px;height: 110px; margin-top: 5px"></div>
+        <div class="logo"> <img src="resources/images/docker.png" style="width: 100px;height: 110px; margin-top: 5px"></div>
+        <div class="logo"> <img src="resources/images/boot.png" style="width: 100px;height: 110px; margin-top: 5px"></div>
+    </div>
+</div>
+</div>
 
 </body>
 </html>

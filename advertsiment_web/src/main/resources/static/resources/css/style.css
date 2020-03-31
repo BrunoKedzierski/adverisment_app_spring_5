@@ -1,0 +1,90 @@
+
+/* HEADER STYLES */
+body{
+    background-color: #6d98ab;
+}
+.navbar {
+
+    background-color:  #282828;
+    margin-bottom: 0px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.navbar a.navbar-brand {
+    background: url("../images/spring-logo-dataflow.png") -1px -1px no-repeat;
+    margin: 12px 0 6px;
+    width: 229px;
+    height: 46px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+}
+.navbar a.navbar-brand span {
+    display: block;
+    width: 229px;
+    height: 46px;
+    background: url("../images/spring-logo-dataflow.png") -1px -48px no-repeat;
+    opacity: 0;
+    -moz-transition: opacity 0.12s ease-in-out;
+    -webkit-transition: opacity 0.12s ease-in-out;
+    -o-transition: opacity 0.12s ease-in-out;
+}
+
+.navbar li > a,
+.navbar-text {
+    font-family: "montserratregular", sans-serif;
+    text-shadow: none;
+    font-size: 14px;
+    /* line-height: 14px; */
+
+    padding: 28px 20px;
+
+}
+.navbar li > a {
+    text-transform: uppercase;
+}
+.navbar .navbar-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+#main-navbar li a {
+    color:  white;
+
+
+
+}
+
+#main-navbar li:hover {
+    background-color:  #006666;
+
+
+}
+#main-navbar li:hover > a {
+    color:  white;
+
+
+}
+.logo{
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.logo:hover{
+    transform:scale(1.5,1.5);
+}
+.table-striped{
+    background-color: #282828;
+    color: #6d98ab;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: white;
+    border:none;
+}
+
+/* END HEADER STYLES */
+
