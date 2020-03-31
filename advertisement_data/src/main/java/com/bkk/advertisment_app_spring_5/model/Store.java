@@ -9,10 +9,10 @@ public class Store extends BaseEntity {
     private String adress;
     private String zip;
     private String City;
-    private String manager;
+    private StoreManager manager;
     private Set<Product> products = new HashSet<>();
 
-    public Store(String name, String adress, String zip, String city, String manager) {
+    public Store(String name, String adress, String zip, String city, StoreManager manager) {
         this.name = name;
         this.adress = adress;
         this.zip = zip;
@@ -55,11 +55,11 @@ public class Store extends BaseEntity {
         City = city;
     }
 
-    public String getManager() {
+    public StoreManager getManager() {
         return manager;
     }
 
-    public void setManager(String manager) {
+    public void setManager(StoreManager manager) {
         this.manager = manager;
     }
 
